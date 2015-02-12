@@ -6,8 +6,8 @@ before_script:
 deploy:
   provider: heroku
   api_key:
-    secure: KxoeHbmu3K4czIjYv/MdfDloLgU2MzT9VrviiNfEc08if9U+brOHFC4pKAB9e63omxpojB3dNHGwMeKPccOSHpAxPvQJ0UK4+mcgi1eLjRCtHsu3K88tLoesAFDW/cXKxpLkIEOtPS72o3t+lNdBA60cqOAP87fb0y5ULSBLtqQ=
+    secure: T2I4aPP5VjjZmHyGeYn4eTjpzXHz5EfNBEZdxLgrTeoV9D01jVcowTKovOrJfP9vYLwEBcPjCBtkD7rlETA7e946Edcw3551RwaDSCpzhpGashesTK+8bnSO2OQzcw5HkxMu5PtAH3kQDw9/7grwwUU1fes2/4G6sluwno4q9Q0=
   app: travis-test
   run:
-    - "rake db:migrate"
-    - restart
+  - rake db:migrate
+  - restart
