@@ -9,5 +9,5 @@ deploy:
     secure: T2I4aPP5VjjZmHyGeYn4eTjpzXHz5EfNBEZdxLgrTeoV9D01jVcowTKovOrJfP9vYLwEBcPjCBtkD7rlETA7e946Edcw3551RwaDSCpzhpGashesTK+8bnSO2OQzcw5HkxMu5PtAH3kQDw9/7grwwUU1fes2/4G6sluwno4q9Q0=
   app: travis-test
   run:
-  - rake db:migrate
+  - bundle exec rake db:migrate
   - restart
